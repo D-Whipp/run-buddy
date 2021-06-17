@@ -177,14 +177,15 @@ section {
   content: "";
   width: 20px;
   height: 20px;
-  border-radius: 0%;
-  background: #ffffff;
+  border-radius: 50%;
+  background: #024e76;
   position: absolute;
   left: -29px;
   top: -3px;
+  background-image: radial-gradient(circle, #39a6b2, #024e76);
 }
 
-.radio-wrapper label::after {
+.checkbox-wrapper label::after {
   content: "";
   height: 6px;
   width: 14px;
@@ -194,6 +195,16 @@ section {
   left: -26px;
   top: 1px;
   transform: rotate(-58deg);
+}
+
+.checkbox-wrapper input + label::after,
+.radio-wrapper input + label::after {
+  content: none;
+}
+
+.checkbox-wrapper input:checked + label::after,
+.radio-wrapper input:checked + label::after {
+  content: "";
 }
 /* Hero Checkbox CSS Magic End */
 
@@ -462,7 +473,9 @@ section {
   header {
     padding-bottom: 0;
     justify-content: center;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
   }
 
   header h1 {
