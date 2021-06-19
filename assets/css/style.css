@@ -19,6 +19,7 @@ body {
 
 /* apply styles to <header> */
 header {
+  background-image: url("../img/hero-bg.jpg");
   padding: 20px 35px;
   background-color: var(--tertiary-color);
   display: flex;
@@ -27,7 +28,6 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-image: url("../img/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -98,7 +98,7 @@ section {
 
 /* Hero Style Start */
 .hero {
-  background-image: url("/assets/img/hero-bg.jpg");
+  background-image: url("../img/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
