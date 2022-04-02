@@ -1,4 +1,6 @@
 # Run Buddy, Inc
+### Front End Web App
+![app screenshot](./assets/img/app-screenshot.png)
 
 ## Purpose
 A website that offers fitness services.
